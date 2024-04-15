@@ -1,0 +1,24 @@
+[project]
+name = "cython-study"
+version = "0.0.1"
+
+[project.optional-dependencies]
+dev = [
+    "ruff == 0.3.7",
+    "mypy == 1.9.0",
+]
+
+[build-system]
+requires = [
+    "setuptools >= 61.0",
+    "cython == 3.0.10",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = ["D203", "D213"]
+extend-ignore = ["D"]
+
+[tool.mypy]
+exclude = ["build"]

@@ -1,0 +1,13 @@
+# pyproject
+*.egg-info
+
+# cython
+build
+*.c
+*.so
+
+# venv
+.venv
+
+# dev
+.*_cache
