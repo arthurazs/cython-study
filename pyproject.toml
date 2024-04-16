@@ -21,4 +21,7 @@ ignore = ["D203", "D213"]
 extend-ignore = ["D"]
 
 [tool.mypy]
+strict = true
+show_error_codes = true
+enable_error_code = "ignore-without-code"
 exclude = ["build"]

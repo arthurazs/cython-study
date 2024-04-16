@@ -9,7 +9,7 @@ build:
 	uv pip install .[dev]
 
 lint:
-	mypy --strict .
+	mypy .
 	ruff check .
 
 clean:
