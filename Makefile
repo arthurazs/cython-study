@@ -1,5 +1,5 @@
 run:
-	python src/py_code.py
+	python -m cython_study
 
 install:
 	pip install uv
@@ -13,4 +13,4 @@ lint:
 	ruff check .
 
 clean:
-	rm -rf build src/*.c src/*.so __pycache__ .mypy_cache .ruff_cache src/*.egg-info
+	rm -rf build src/cython_study/*.c .mypy_cache .ruff_cache src/*.egg-info

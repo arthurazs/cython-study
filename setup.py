@@ -1,9 +1,7 @@
-from Cython.Build import cythonize  # type: ignore[import-untyped]
-from setuptools import Extension, setup  # type: ignore[import-untyped]
-
-extensions = [Extension("c_code", ["src/c_code.pyx"])]
+from Cython.Build import cythonize  # type: ignore[import-not-found]
+from setuptools import setup  # type: ignore[import-untyped]
 
 setup(
     name="Cython Study",
-    ext_modules=cythonize(extensions),
+    ext_modules=cythonize("src/cython_study/c_code.pyx"),
 )
